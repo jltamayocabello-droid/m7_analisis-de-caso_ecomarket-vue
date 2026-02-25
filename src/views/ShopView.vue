@@ -27,6 +27,8 @@
         </template>
       </BaseModal>
     </Teleport>
+
+    <ProductDetails />
   </div>
 </template>
 
@@ -34,6 +36,7 @@
 import { ref, onMounted } from 'vue'
 import ProductList from '../components/ProductList.vue'
 import BaseModal from '../components/BaseModal.vue' // Importamos el modal
+import ProductDetails from '@/components/ProductDetails.vue'
 
 const products = ref([])
 const isLoading = ref(true)
